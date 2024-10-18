@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vegetables</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700;900&display=swap">
+    <style>
+body {
+    font-family: 'Noto Sans', sans-serif; /* 設置字體 */
+    background-color: #EDF2C5; /* 背景顏色 */
+    margin: 0;
+    padding: 0;
+    text-align: left; /* 所有文本左對齊 */
+}
+
+.content {
+    max-width: 1120px; /* 設置最大寬度 */
+    margin: 0 auto; /* 水平居中 */
+    padding: 20px;
+}
+
+header {
+    padding: 20px 0; 
+    text-align: left; /* 標題左對齊 */
+}
+
+.paragraph-title {
+    width: 1122px; /* 確保這是您所需的寬度 */
+    height: 62px; /* 設置高度 */
+    top: 36px; /* 上邊距 */
+    left: 160px; /* 左邊距 */
+    padding: 0px 0px 2px 0px; /* 內邊距 */
+    gap: 0px; /* 間距 */
+    opacity: 1; /* 使其可見 */
+    font-family: 'Noto Sans', sans-serif; /* 字體 */
+    font-size: 44px; /* 設置字體大小為 44px */
+    font-weight: 900; /* 字體粗細 */
+    line-height: 59.93px; /* 行高 */
+    text-align: left; /* 左對齊 */
+    color: #778A50; /* 字體顏色 */
+}
+
+
+.menu {
+    width: 1120px; /* 設置寬度 */
+    height: 44px; /* 設置高度 */
+    top: 106px; /* 設置上邊距 */
+    left: 160px; /* 設置左邊距 */
+    gap: 0px; /* 間距 */
+    border-radius: 3px; /* 圓角 */
+    opacity: 1; /* 使其可見 */
+    background: #778A50; /* 深綠色背景 */
+    padding: 0; /* 內邊距，可根據需要調整 */
+    display: flex; /* 使用 Flexbox */
+    align-items: center; /* 垂直居中 */
+    margin: 0 auto; /* 水平居中 */
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu li {
+    display: inline;
+    margin-right: 15px;
+}
+
+.menu a {
+    color: #F7FBDA; /* 設定菜單文字顏色為 #F7FBDA */
+    text-decoration: none; /* 去掉下劃線 */
+}
+
+.footer {
+    background: #778A50;
+    color: #F7FBDA; /* 設定頁腳文字顏色 */
+    text-align: left; /* 左對齊 */
+    padding: 20px;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+
+.flex-container {
+    display: flex; /* 使用 Flexbox */
+    justify-content: flex-start; /* 左對齊 */
+    align-items: flex-start; /* 垂直對齊 */
+    margin-bottom: 20px; /* 框框之間的間距 */
+}
+
+.vegetable-images {
+    display: flex; /* 使用 Flexbox 水平排列 */
+    gap: 10px; /* 圖片之間的間距 */
+    flex: 1; /* 使其佔用可用空間 */
+}
+
+.vegetable-images img {
+    width: 165px;
+    height: auto;
+}
+
+.text-container {
+    width: 528px; /* 設置寬度 */
+    height: 201px; /* 設置高度 */
+    border: 2px solid #778A50; /* 框框顏色 */
+    padding: 10px; /* 框框內邊距 */
+    background-color: #F7FBDA; /* 框框背景顏色 */
+    text-align: left; /* 左對齊文本 */
+    opacity: 1; /* 使其可見 */
+}
+
+.header-container {
+    display: flex;
+    justify-content: flex-start; /* 左對齊 */
+    align-items: center;
+    background-color: #778A50;
+    padding: 10px 20px;
+    margin-bottom: 20px; /* 增加底部間距 */
+}
+
+.section {
+    display: flex;
+    justify-content: space-between; /* 在容器內部分開元素 */
+    margin-bottom: 20px; /* 設置間隔 */
+}
+
+.section div {
+    width: 528px; /* 設置寬度 */
+    height: 45px; /* 設置高度 */
+    padding: 10px 433px 11px 30px; /* 設置內邊距 */
+    gap: 0px; /* 間距 */
+    border-radius: 3px 0px 0px 0px; /* 圓角 */
+    opacity: 1; /* 使其可見 */
+    background-color: #778A50; /* 背景顏色 */
+    color: #F7FBDA; /* 字體顏色 */
+    display: flex; /* 使用 Flexbox 對齊文字 */
+    justify-content: flex-start; /* 左對齊 */
+    align-items: center; /* 垂直居中 */
+}
+
+/* 若要特別針對 Vegetables 和 Contact 進行設置 */
+.vegetables-box {
+    width: 528px;
+    height: 45px;
+    padding: 10px 0;
+    background-color: #778A50;
+    color: #F7FBDA;
+    border-radius: 3px;
+    opacity: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 20px; /* 添加底部邊距以分開框 */
+}
+
+.contact-box {
+    width: 528px;
+    height: 45px;
+    padding: 10px 0;
+    background-color: #778A50;
+    color: #F7FBDA;
+    border-radius: 3px;
+    opacity: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 20px; /* 可以調整間距 */
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="paragraph-title">Vegetables</h1>
+        <div class="picture">
+            <h2 class="LOGIN">LOGIN</h2>
+            <h2 class="JOIN">JOIN</h2>
+        </div>
+    </header>
+
+    <nav class="menu">
+        <ul>
+            <li><a href="Home" class="Home">Home</a></li>
+            <li><a href="About Us" class="About-Us">About Us</a></li>
+            <li><a href="Vegetables" class="Vegetables">Vegetables</a></li>
+            <li><a href="Online" class="Online">Online</a></li>
+            <li><a href="Contact" class="Contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main class="content">
+        <div class="section">
+            <div>Vegetables</div>
+            <div>Contact</div>
+        </div>
+
+        <div class="flex-container">
+            <div class="vegetable-images">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUA
+                AAAAIAAADof6jIAAAACXBIWXMAAB7CAAAewgFu0HU+AAAAAElFTkSuQmCC" alt="Carrot">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUA
+                AAAACAAAAAAGk8u4GAAAAAElFTkSuQmCC" alt="Corn">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUA
+                AAAACAAAAAAGlA3XIAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAQAA
+                AAAAAAAAAAAAAAAAABH/yD+wAAAAAElFTkSuQmCC" alt="Pepper">
+            </div>
+
+            <div class="text-container">
+                <p class="word1">For any questions or suggestions about Vegetables, the Vegetables Club, or your online order, you can contact Vegetables Customer Service by phone, email, or post, and we’ll be happy to help.</p>
+                <hr>
+                <p class="word2">E-mail: <a href="mailto:Vegetables@aaabbccc.com">Vegetables@aaabbccc.com</a><br>
+                    PHONE: +886-123-456-789</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>Copyrights 2017 Vegetables cise / Design by Vegetables</p>
+    </footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
